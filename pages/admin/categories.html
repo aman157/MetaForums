@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Categories</title>
+
+<link rel="stylesheet" type="text/css" href="../../css/theme.bootstrap_2.css">
+<link rel="stylesheet" type="text/css" href="../../css/jquery.tablesorter.pager.css">
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" >
+<link rel="stylesheet" type="text/css" href="../../css/adminstyle.css" >
+<link rel="stylesheet" type="text/css" href="../../css/admin/categories.css"/>
+
+<script src="../../js/lumino.glyphs.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/jquery.tablesorter.pager.js"></script>
+<script src="../../js/sorterScript.js"></script>
+<script src="../../js/jquery.tablesorter.js"></script>
+<script src="../../js/jquery.tablesorter.widgets.js"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<img class="adminLogo" src="../../img/metazone2.gif"/>
+				<a class="navbar-brand" href="#"><span class="red">Metazone</span><Span class="blue"> Infotech</Span></a>
+				<ul class="user-menu">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Admin <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							
+							<li><a href="#"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+							
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+	<form role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+		</form>
+		<ul class="nav menu">
+        	<li><a href="adminHomepage.html"><svg class="glyph stroked home"><use xlink:href="#stroked-home"/></svg>Home</a></li>
+			<li ><a href="controlPanel.html"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> Admin Index</a></li>
+			<li><a href="groups.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Groups</a></li>
+			<li><a href="users.html"><svg class="glyph stroked male user "><use xlink:href="#stroked-male-user"/></svg> users</a></li>
+			<li class="active"><a href="categories.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Categories</a></li>
+			<li><a href="forum.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Forums</a></li>
+			<li><a href="ranking.html"><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> Ranking</a></li>
+            <li><a href="memberListing.html"><svg class="glyph stroked film"><use xlink:href="#stroked-film"/></svg>Members List</a></li>
+			<li><a href="banning.html"><svg class="glyph stroked star"><use xlink:href="#stroked-star"></use></svg> Banning</a></li>
+			<li><a href="configuration.html"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"/></svg> Configuration</a></li>
+			
+		</ul>
+
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">	
+
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> </a></li>
+				<li>EDIT CATEGORY || INSERT CATEGORY || DELETE CATEGORY</li>
+			</ol>
+		</div>
+		
+        <div class="rows">
+        	<div class="Groups">
+            	<h4 class="tableHead">Category Listing</h4>
+            </div>
+        </div>	
+        
+        <div class="rows">
+        
+        
+        <table class=" sorted-table"> <!-- bootstrap classes added by the uitheme widget -->
+  <thead>
+      			<tr>
+                	<th>Category</th>
+                    <th>Modifications</th>
+                    <th>Up</th>
+                    <th>Down</th>
+                    <th>Delete</th>
+                </tr>
+  </thead>
+  <tfoot>
+      			<tr>
+                	<th>Category</th>
+                    <th>Modifications</th>
+                    <th>Up</th>
+                    <th>Down</th>
+                    <th>Delete</th>
+                </tr>
+    <tr>
+      <th colspan="7" class="ts-pager form-horizontal">
+        <button type="button" class="btn first"><i class="icon-step-backward glyphicon glyphicon-step-backward"></i></button>
+        <button type="button" class="btn prev"><i class="icon-arrow-left glyphicon glyphicon-backward"></i></button>
+        <span class="pagedisplay"></span> <!-- this can be any element, including an input -->
+        <button type="button" class="btn next"><i class="icon-arrow-right glyphicon glyphicon-forward"></i></button>
+        <button type="button" class="btn last"><i class="icon-step-forward glyphicon glyphicon-step-forward"></i></button>
+        <select class="pagesize input-mini" title="Select page size">
+          <option selected="selected" value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+        </select>
+        <select class="pagenum input-mini" title="Select page number"></select>
+      </th>
+    </tr>
+  </tfoot>
+  <tbody>
+  			<tr>
+                	<td>Java</td>
+                    <td><a href="insertNewCategory.html"><span class="glyphicon glyphicon-edit"></span>Edit</a></td>
+                    <td><span id="gly" class="glyphicon glyphicon-arrow-up"></span></td>
+                    <td><span id="gly" class="glyphicon glyphicon-arrow-down"></span></td>
+                    <td><input class="" type="checkbox"/></td>
+                </tr>
+                
+                <tr>
+                	<td>HTML</td>
+                    <td><a href="insertNewCategory.html"><span class="glyphicon glyphicon-edit"></span>Edit</a></td>
+                   <td><span id="gly" class="glyphicon glyphicon-arrow-up"></span></td>
+                    <td><span id="gly" class="glyphicon glyphicon-arrow-down"></span></td>
+                    <td><input class="" type="checkbox"/></td>
+                </tr>
+                
+                <tr>
+                	<td>PHP</td>
+                    <td><a href="insertNewCategory.html"><span class="glyphicon glyphicon-edit"></span>Edit</a></td>
+                    <td><span id="gly" class="glyphicon glyphicon-arrow-up"></span></td>
+                    <td><span id="gly" class="glyphicon glyphicon-arrow-down"></span></td>
+                    <td><input class="" type="checkbox"/></td>
+                </tr>
+                
+                <tr>
+                	<td>MYSQL</td>
+                    <td><a href="insertNewCategory.html"><span class="glyphicon glyphicon-edit"></span>Edit</a></td>
+                    <td><span id="gly" class="glyphicon glyphicon-arrow-up"></span></td>
+                    <td><span id="gly" class="glyphicon glyphicon-arrow-down"></span></td>
+                    <td><input class="" type="checkbox"/></td>
+                </tr>
+  				</tbody>
+  				</table>
+			
+		</div><!--/.row-->
+        
+        <div class="row categoriesBtn">
+        	<button type="submit" class="btn btn-primary" onclick="window.location='/Users/Aman Saini/Desktop/Main/pages/admin/insertNewCategory.html';"><span class="glyphicon glyphicon-list"></span> Insert New</button>
+            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+        </div>
+		
+		<div class=" row footer">
+        <p class="copyright">Copyright © 2016 <a class="copyright" href="#" target="blank">MetaZone Infotech</a> / All rights reserved.</p>
+        	
+        </div>
+		
+		
+        </div><!--main-->
+		
+	
+		
+		
+								
+		
+	</div>	
+</body>
+
+</html>

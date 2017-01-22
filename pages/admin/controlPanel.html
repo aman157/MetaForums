@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Control Panel</title>
+
+<link rel="stylesheet" href="../../css/theme.bootstrap_2.css">
+<link rel="stylesheet" href="../../css/jquery.tablesorter.pager.css">
+<link rel="stylesheet" href="../../css/bootstrap.min.css" >
+<link rel="stylesheet" href="../../css/datepicker3.css" >
+<link rel="stylesheet" href="../../css/adminstyle.css" >
+
+
+<script src="../../js/lumino.glyphs.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/chart.min.js"></script>
+<script src="../../js/chart-data.js"></script>
+<script src="../../js/easypiechart.js"></script>
+<script src="../../js/easypiechart-data.js"></script>
+<script src="../../js/jquery.tablesorter.pager.js"></script>
+<script src="../../js/sorterScript.js"></script>
+<script src="../../js/jquery.tablesorter.js"></script>
+<script src="../../js/jquery.tablesorter.widgets.js"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+                <img class="adminLogo" src="../../img/metazone2.gif"/>
+				<a class="navbar-brand" href="#"><span class="red">Metazone</span><Span class="blue"> Infotech</Span></a>
+				<ul class="user-menu">
+                	
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Admin <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							
+							<li><a href="#"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+							
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+    	<form role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+		</form>
+		<ul class="nav menu">
+        	<li><a href="adminHomepage.html"><svg class="glyph stroked home"><use xlink:href="#stroked-home"/></svg>Home</a></li>
+			<li class="active"><a href="controlPanel.html"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> Admin Index</a></li>
+			<li><a href="groups.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Groups</a></li>
+			<li><a href="users.html"><svg class="glyph stroked male user "><use xlink:href="#stroked-male-user"/></svg> users</a></li>
+			<li><a href="categories.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Categories</a></li>
+			<li><a href="forum.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Forums</a></li>
+			<li><a href="ranking.html"><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> Ranking</a></li>
+            <li><a href="memberListing.html"><svg class="glyph stroked film"><use xlink:href="#stroked-film"/></svg>Members List</a></li>
+			<li><a href="banning.html"><svg class="glyph stroked star"><use xlink:href="#stroked-star"></use></svg> Banning</a></li>
+			<li><a href="configuration.html"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"/></svg> Configuration</a></li>
+			
+		</ul>
+
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> </a></li>
+				<li>FORUM STATITICS || CURRENTLY ONLINE || DISCUSSION CHART</li>
+			</ol>
+		</div>
+        
+		<div class="row rowHead">
+				<h1 class="col-sm-4 page-header">Forum Statitics</h1>
+                <img class="stat col-sm-2" src="../../img/Stat.png" height="100px" width="200px">	
+                <img class="stat col-sm-2 " src="../../img/Stat1.png" height="100px" width="200px">
+                <img class="stat col-sm-2 " src="../../img/Stat2.png" height="100px" width="200px">
+                <img class="stat col-sm-2 " src="../../img/Stat3.png" height="100px" width="200px">
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-xs-12 col-md-6 col-lg-3">
+				<div class="panel panel-blue panel-widget ">
+					<div class="row no-padding">
+						<div class="col-sm-3 col-lg-5 widget-left">
+							<svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg>
+						</div>
+						<div class="col-sm-9 col-lg-7 widget-right">
+							<div class="large">0</div>
+							<div class="text-muted">Total Post</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-3">
+				<div class="panel panel-orange panel-widget">
+					<div class="row no-padding">
+						<div class="col-sm-3 col-lg-5 widget-left">
+							<svg class="glyph stroked empty-message"><use xlink:href="#stroked-empty-message"></use></svg>
+						</div>
+						<div class="col-sm-9 col-lg-7 widget-right">
+							<div class="large">0</div>
+							<div class="text-muted">Total Topic</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-3">
+				<div class="panel panel-teal panel-widget">
+					<div class="row no-padding">
+						<div class="col-sm-3 col-lg-5 widget-left">
+							<svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg>
+						</div>
+						<div class="col-sm-9 col-lg-7 widget-right">
+							<div class="large">0</div>
+							<div class="text-muted">Total Users</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            
+            <div class="col-xs-12 col-md-6 col-lg-3">
+				<div class="panel panel-red panel-widget">
+					<div class="row no-padding">
+						<div class="col-sm-3 col-lg-5 widget-left">
+							<svg class="glyph stroked eye"><use xlink:href="#stroked-eye"/></svg>
+						</div>
+						<div class="col-sm-9 col-lg-7 widget-right">
+							<div class="large">0</div>
+							<div class="text-muted">Total Hits</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div><!--/.row-->
+        
+        <div class="row">
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Post Todays</h4>
+						<div class="easypiechart" id="easypiechart-blue" data-percent="92" ><span class="percent">470</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Topic Todays</h4>
+						<div class="easypiechart" id="easypiechart-orange" data-percent="65" ><span class="percent">65</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Today's Registration</h4>
+						<div class="easypiechart" id="easypiechart-teal" data-percent="56" ><span class="percent">56</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Todays hits</h4>
+						<div class="easypiechart" id="easypiechart-red" data-percent="27" ><span class="percent">27</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+        
+        
+       
+        
+        <div class="rows col-sm-12">
+        <div class="tableHead">
+        	<h4 class="tableHead">Currently Online</h4>
+        </div>        
+        
+        <table class="sorted-table"> <!-- bootstrap classes added by the uitheme widget -->
+  <thead>
+  				 <tr>
+                	<th>UserName</th>
+                    <th>Designation</th>
+                    <th>Login</th>
+                    <th>LastUpdated</th>
+                </tr>
+  </thead>
+  <tfoot>
+      			<tr>
+                	<th>UserName</th>
+                    <th>Designation</th>
+                    <th>Login</th>
+                    <th>LastUpdated</th>
+                </tr>
+    <tr>
+      <th colspan="7" class="ts-pager form-horizontal">
+        <button type="button" class="btn first"><i class="icon-step-backward glyphicon glyphicon-step-backward"></i></button>
+        <button type="button" class="btn prev"><i class="icon-arrow-left glyphicon glyphicon-backward"></i></button>
+        <span class="pagedisplay"></span> <!-- this can be any element, including an input -->
+        <button type="button" class="btn next"><i class="icon-arrow-right glyphicon glyphicon-forward"></i></button>
+        <button type="button" class="btn last"><i class="icon-step-forward glyphicon glyphicon-step-forward"></i></button>
+        <select class="pagesize input-mini" title="Select page size">
+          <option selected="selected" value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+        </select>
+        <select class="pagenum input-mini" title="Select page number"></select>
+      </th>
+    </tr>
+  </tfoot>
+  <tbody>
+		<tr>
+                	<td>Aman saini</td>
+                    <td>Admin</td>
+                    <td>1:20 pm</td>
+                    <td>20/04/2016 12:00</td>
+                </tr>
+
+				<tr>
+                	<td>Kanika Rohtas</td>
+                    <td>Moderator</td>
+                    <td>12:20 pm</td>
+                    <td>21/04/2016 01:00 pm</td>
+                </tr>
+                
+                <tr>
+                	<td>Jayant Sharma</td>
+                    <td>Java Moderator</td>
+                    <td>3:00 pm</td>
+                    <td>25/04/2016 2:00 am</td>
+                </tr>
+                
+                <tr>
+                	<td>Gopal </td>
+                    <td>Html Moderator</td>
+                    <td>4:20 pm</td>
+                    <td>23/04/2016 10:00 am</td>
+                </tr>
+  </tbody>
+</table>
+        
+			
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">Total User Disscussion Stat</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+        
+        <div class=" row footer">
+        <p class="copyright">Copyright © 2016 <a class="copyright" href="#" target="blank">MetaZone Infotech</a> / All rights reserved.</p>
+        	
+        </div>
+      
+	</div>	<!--/.main-->
+    
+    	
+    
+    
+	
+	
+</body>
+
+</html>
