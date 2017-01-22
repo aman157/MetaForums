@@ -1,0 +1,16 @@
+
+
+.searchForum{
+	margin-top:25px;	
+}
+
+.searchLabel{
+	color: #337ab7;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.radioLabel{
+	    color: #869093;
+		    text-transform: lowercase;
+}

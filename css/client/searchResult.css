@@ -1,0 +1,48 @@
+
+.head{
+	margin-bottom:20px;	
+}
+
+.searchResult{
+	    border: 3px solid rgba(0, 0, 0, 0.44);
+    margin-bottom: 20px;
+    padding: 16px;
+    border-radius: 7px;
+	    
+}
+
+.question{
+	background-color: aqua;
+	    padding: 5px;
+    font-size: larger;
+    font-variant: small-caps;
+	font-weight: 900;
+	    border-radius: 5px;
+}
+
+.answer{
+	    padding: 20px;
+    background-color: azure;
+    font-size: 18px;
+}
+
+.info{
+		
+}
+
+.rowSearchResult{
+	    margin: 25px 25px 25px 25px;
+}
+
+.viewPostBtn {
+	margin:20px;
+}
+
+.searchHeading{
+		    font-weight: 700;
+    font-family: inherit;
+}
+
+.autherInfo{
+	    font-size: 15px;
+}

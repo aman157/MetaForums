@@ -1,0 +1,26 @@
+
+.head{
+	text-align:center;	
+	    border-bottom: 2px solid;
+	
+}
+
+.contentHead{
+	margin: 20px 0px 20px 0px;
+}	
+
+
+.contentPost{
+	
+	    margin: 20px 0px 20px 0px;
+	
+}
+
+.codeEditor{
+	margin:25px;
+	
+}
+
+.postBtn{
+	margin-top:20px;
+}

@@ -1,0 +1,13 @@
+.memberImage{
+	
+	opacity:0.2;
+	padding-top:20px;
+}
+
+.memberImg1{
+	    z-index: -1;
+    margin-top: -50px;
+    margin-left: -50px;
+	opacity:0.2;
+	
+}
